@@ -1,8 +1,9 @@
 // server/index.js
 const express = require("express");
-const cors = require("cors");
+const cors1 = require("cors");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const cors = cors1();
 /* cors IDIOT
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", '*');
