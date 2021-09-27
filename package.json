@@ -21,6 +21,5 @@
   },
   "keywords": [],
   "author": "Pokesi",
-  "proxy": "http://localhost:3001",
   "license": "ISC"
 }
