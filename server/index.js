@@ -2,6 +2,19 @@
 const express = require("express");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const cors = require("cors");
+
+var corsOptions = {
+  origin: function (origin, callback) {
+    // db.loadOrigins is an example call to load
+    // a list of origins from a backing database
+    db.loadOrigins(function (error, origins) {
+      callback(error, origins)
+    })
+  }
+}
+
+
 app.get("/api", (req, res) => {
   res.json({ message: "running...", description: "blockarcade cabinet", attributes: [{trait_type:  "main", value: "cabinet"}] });
 });
