@@ -2,7 +2,7 @@
 const express = require("express");
 const PORT = process.env.PORT || 3001;
 const app = express();
-var cors = require('cors')
+const cors = require('cors')
 
 // Add headers before the routes are defined
 app.use(cors());
