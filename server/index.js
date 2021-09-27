@@ -1,18 +1,17 @@
 // server/index.js
 const express = require("express");
-const cors1 = require("cors");
+const cors = require("cors");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const cors = cors1();
-/* cors IDIOT
+//const cors = cors1();
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", '*');
-  res.header("Access-Control-Allow-Credentials", true);
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-  res.header("Access-Control-Allow-Headers", 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json');
-  next();
-});*/
-app.use(cors());
+    res.header("Access-Control-Allow-Origin", '*');
+    res.header("Access-Control-Allow-Credentials", true);
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+    res.header("Access-Control-Allow-Headers", 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json');
+    next();
+});
+//app.use(cors());
 
 app.get("/api", (req, res) => {
   res.json({ message: "running...", description: "blockarcade cabinet", attributes: [{trait_type:  "main", value: "cabinet"}] });
