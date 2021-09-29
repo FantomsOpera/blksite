@@ -112,6 +112,10 @@ app.get("/29", (req, res) => {
   res.json({ image: "https://cloudflare-ipfs.com/ipfs/QmUhugabfXjjrmM3qfREB61dUKW2ngZtbDiujDMXdG2yVt", id: "29", name: "Cabinet 30", description: "blockarcade cabinet", attributes: [{trait_type:  "main", value: "cabinet"}] });
 });
 
+app.get('/fantoms_api', (req, res) => {
+  const id = req.query.id;
+  res.json({ name: "Fantom ${id}", image: "https://ipfs.io/ipfs/QmZ94FGfG8HfpzJ14Nk3W8XdWUnoXhwhuWa7UH47PdRgEk/imagesa/${id}.png", id: "${id}", description: "A cute little ghost" })
+})
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
