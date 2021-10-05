@@ -114,7 +114,7 @@ app.get("/29", (req, res) => {
 
 app.get('/fantoms_api', (req, res) => {
   const id = req.query.id;
-  res.json({ name: "Fantom " + id, image: "https://ipfs.io/ipfs/QmZ94FGfG8HfpzJ14Nk3W8XdWUnoXhwhuWa7UH47PdRgEk/imagesa/" + id + ".png", id: id, description: "A cute little ghost" })
+  res.json({ name: "Fantom " + id, image: "https://gateway.pinata.cloud/ipfs/QmZ94FGfG8HfpzJ14Nk3W8XdWUnoXhwhuWa7UH47PdRgEk/imagesa/" + id + ".png", id: id, description: "A cute little ghost" })
 })
 
 app.listen(PORT, () => {
