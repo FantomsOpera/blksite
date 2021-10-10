@@ -119,7 +119,7 @@ app.get('/fantoms_api', (req, res) => {
 
 app.get('/cyber_api', (req, res) => {
   const id = req.query.id;
-  res.json({ name: "Cyber Fantom " + id, image: "https://cloudflare-ipfs.com/ipfs/QmVo9v5MwGFYqcmK6ZiAsnXyTJt6zhVuFYpAKwqdDUJotA/" + id + ".png", id: id, description: "A hardcore cyberpunk ghost. And it's not a phase." })
+  res.json({ name: "Cyber Fantom " + id, image: "https://raw.githubusercontent.com/Pokesi/blksite/main/images/" + id + ".png", id: id, description: "A hardcore cyberpunk ghost. And it's not a phase." })
 })
 
 app.listen(PORT, () => {
