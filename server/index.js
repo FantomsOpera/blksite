@@ -122,7 +122,7 @@ app.get('/cyber_api', (req, res) => {
   res.json({ name: "Cyber Fantom " + id, image: "https://raw.githubusercontent.com/Pokesi/blksite/main/images/" + id + ".png", id: id, description: "A hardcore cyberpunk ghost. And it's not a phase." })
 })
 
-app.get(/personal_api', (req, res) => {
+app.get('/personal_api', (req, res) => {
     const id = req.query.id || "ERROR";
     if (id == '1' || id == 1) {
         res.json({ name: 'invasion', image: 'https://ipfs.io/ipfs/QmS1JC6oEctArQP3ddA8XZkcMAisNLtDdzTy65sZ8toG1j', id: 'RandomArt Piece ' + id, description: "Inspired by a recurring dream I had, 'invasion' is a piece of photography mixed in with a little touch of originality' });
