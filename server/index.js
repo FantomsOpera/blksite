@@ -125,7 +125,7 @@ app.get('/cyber_api', (req, res) => {
 app.get('/personal_api', (req, res) => {
     const id = req.query.id || "ERROR";
     if (id == '1' || id == 1) {
-        res.json({ name: 'invasion', image: 'https://ipfs.io/ipfs/QmS1JC6oEctArQP3ddA8XZkcMAisNLtDdzTy65sZ8toG1j', id: 'RandomArt Piece ' + id, description: "Inspired by a recurring dream I had, 'invasion' is a piece of photography mixed in with a little touch of originality' });
+        res.json({ name: 'invasion', image: 'https://ipfs.io/ipfs/QmS1JC6oEctArQP3ddA8XZkcMAisNLtDdzTy65sZ8toG1j', id: 'RandomArt Piece ' + id, description: "Inspired by a recurring dream I had, 'invasion' is a piece of photography mixed in with a little touch of originality" });
     } else {
         res.json({ error: 'ERROR'});
     }
