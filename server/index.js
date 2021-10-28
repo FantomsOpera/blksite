@@ -126,6 +126,8 @@ app.get('/personal_api', (req, res) => {
     const id = req.query.id || "ERROR";
     if (id == '1' || id == 1) {
         res.json({ name: 'invasion', image: 'https://raw.githubusercontent.com/Pokesi/blksite/main/10613_Glitch.jpg', id: 'RandomArt Piece ' + id, description: "Inspired by a recurring dream I had, 'invasion' is a piece of photography mixed in with a little touch of originality" });
+    } else if (id == '2' || id == 2) {
+        res.json({ name: 'looping', image: 'https://raw.githubusercontent.com/Pokesi/blksite/main/NshRc4SSXKB86Cx2FB2W.jpg', id: 'RandomArt Piece ' + id, description: "recursion error" });
     } else {
         res.json({ error: 'ERROR'});
     }
