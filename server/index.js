@@ -130,6 +130,8 @@ app.get('/personal_api', (req, res) => {
         res.json({ name: 'looping', image: 'https://raw.githubusercontent.com/Pokesi/blksite/main/NshRc4SSXKB86Cx2FB2W.jpg', id: 'RandomArt Piece ' + id, description: "recursion error" });
     } else if (id == '3' || id == 3) {
         res.json({ name: 'end it', image: 'https://raw.githubusercontent.com/Pokesi/blksite/main/oiNvW3RHxLYu02tRlk8E.jpg', id: 'RandomArt Piece ' + id, description: "all stories must come to an end" });
+    } else if (id == '4' || id == 4) {
+        res.json({ name: 'and it went', image: 'https://raw.githubusercontent.com/Pokesi/blksite/main/y1orjoT1ygoUjATooSPP.jpg', id: 'RandomArt Piece ' + id, description: "theres so much going on, but it would take nothing to end it all" });
     } else {
         res.json({ error: 'ERROR'});
     }
