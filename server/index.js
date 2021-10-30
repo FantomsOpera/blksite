@@ -125,9 +125,11 @@ app.get('/cyber_api', (req, res) => {
 app.get('/personal_api', (req, res) => {
     const id = req.query.id || "ERROR";
     if (id == '1' || id == 1) {
-        res.json({ name: 'invasion', image: 'https://raw.githubusercontent.com/Pokesi/blksite/main/10613_Glitch.jpg', id: 'RandomArt Piece ' + id, description: "Inspired by a recurring dream I had, 'invasion' is a piece of photography mixed in with a little touch of originality" });
+        res.json({ name: 'invasion', image: 'https://raw.githubusercontent.com/Pokesi/blksite/main/10613_Glitch.jpg', id: 'RandomArt Piece ' + id, description: "inspired by a recurring dream I had, 'invasion' is a piece of photography mixed in with a little touch of originality" });
     } else if (id == '2' || id == 2) {
         res.json({ name: 'looping', image: 'https://raw.githubusercontent.com/Pokesi/blksite/main/NshRc4SSXKB86Cx2FB2W.jpg', id: 'RandomArt Piece ' + id, description: "recursion error" });
+    } else if (id == '3' || id == 3) {
+        res.json({ name: 'end it', image: 'https://raw.githubusercontent.com/Pokesi/blksite/main/oiNvW3RHxLYu02tRlk8E.jpg', id: 'RandomArt Piece ' + id, description: "all stories must come to an end" });
     } else {
         res.json({ error: 'ERROR'});
     }
