@@ -122,6 +122,12 @@ app.get('/cyber_api', (req, res) => {
   res.json({ name: "Cyber Fantom " + id, image: "https://raw.githubusercontent.com/Pokesi/blksite/main/images/" + id + ".png", id: id, description: "A hardcore cyberpunk ghost. And it's not a phase." })
 })
 
+app.get("/wbcyborgs", (req, res) => {
+  const id = req.query.id;
+  res.json({ image: 'https://gateway.pinata.cloud/ipfs/QmUbFRfGXwzU5GCDWfBNtGr8fsuxkVjvoenVtaaNuD1nB2/
+' + id + '.png', name: "WBCyborg #" + id, description: "WBCyborg #" + id, id: id});
+});
+
 app.get('/personal_api', (req, res) => {
     const id = req.query.id || "ERROR";
     if (id == '1' || id == 1) {
