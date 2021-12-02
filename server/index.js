@@ -143,15 +143,15 @@ app.get('/personal_api', (req, res) => {
 });
 app.get('/spiritswap', (req, res) => {
     const id = req.query.id;
-    if (id == '0' || id == 0) {
+    if (id == '1' || id == 1) {
         res.json({ name: 'Fog Fantom', image: 'https://spirit.fantoms.art/1.png', id: id, description: 'SpiritSwap x Fantoms on Opera piece #1.'});
-    } else if (id == '1' || id == 1) {
-        res.json({ name: 'Fantom Grave', image: 'https://spirit.fantoms.art/2.png', id: id, description: 'SpiritSwap x Fantoms on Opera piece #2.'});
     } else if (id == '2' || id == 2) {
-        res.json({ name: 'Super Fantom', image: 'https://spirit.fantoms.art/3.png', id: id, description: 'SpiritSwap x Fantoms on Opera piece #3.'});
+        res.json({ name: 'Fantom Grave', image: 'https://spirit.fantoms.art/2.png', id: id, description: 'SpiritSwap x Fantoms on Opera piece #2.'});
     } else if (id == '3' || id == 3) {
-        res.json({ name: 'Creator Fantom', image: 'https://spirit.fantoms.art/4.gif', id: id, description: 'SpiritSwap x Fantoms on Opera piece #3.'});
+        res.json({ name: 'Super Fantom', image: 'https://spirit.fantoms.art/3.png', id: id, description: 'SpiritSwap x Fantoms on Opera piece #3.'});
     } else if (id == '4' || id == 4) {
+        res.json({ name: 'Creator Fantom', image: 'https://spirit.fantoms.art/4.gif', id: id, description: 'SpiritSwap x Fantoms on Opera piece #3.'});
+    } else if (id == '5' || id == 5) {
         res.json({ name: 'Camouflage Fantom', image: 'https://spirit.fantoms.art/5.png', id: id, description: 'SpiritSwap x Fantoms on Opera piece #5.'});
     }
 });
