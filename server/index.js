@@ -155,6 +155,12 @@ app.get('/spiritswap', (req, res) => {
         res.json({ name: 'Camouflage Soully Fantom', image: 'https://spirit.fantoms.art/5.png', id: id, description: 'SpiritSwap x Fantoms on Opera piece #5.'});
     }
 });
+app.get('/special', (req, res) => {
+    const id = req.query.id;
+    if (id == '1' || id == 1) {
+        res.json({ name: 'Christmas Fantom', image: 'https://mint.fantoms.art/Special1.png', id: id, description: 'Merry christmas to all the fantom community!'});
+    }
+});
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
