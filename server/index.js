@@ -119,7 +119,7 @@ app.get('/fantoms_api', (req, res) => {
 
 app.get('/feggz_api', (req, res) => {
   const id = req.query.id;
-  res.json({ name: "FancyEggz #" + id, image: "IMAGEPATHHERE" + id + ".png", id: id, description: "Fancy Eggz #"+id })
+  res.json({ name: "FancyEggz #" + id, image: "IMAGEPATHHERE/" + id + ".png", id: id, description: "Fancy Eggz #"+id })
 })
 
 app.get('/cyber_api', (req, res) => {
