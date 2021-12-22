@@ -117,6 +117,11 @@ app.get('/fantoms_api', (req, res) => {
   res.json({ name: "Fantom " + id, image: "https://mint.fantoms.art/imagesa/" + id + ".png", id: id, description: "A cute little ghost" })
 })
 
+app.get('/feggz_api', (req, res) => {
+  const id = req.query.id;
+  res.json({ name: "FancyEggz #" + id, image: "IMAGEPATHHERE" + id + ".png", id: id, description: "Fancy Eggz #"+id })
+})
+
 app.get('/cyber_api', (req, res) => {
   const id = req.query.id;
   res.json({ name: "Cyber Fantom " + id, image: "https://raw.githubusercontent.com/Pokesi/blksite/main/images/" + id + ".png", id: id, description: "A hardcore cyberpunk ghost. And it's not a phase." })
