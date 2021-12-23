@@ -121,9 +121,9 @@ app.get('/feggz_api', (req, res) => {
   const id = req.query.id;
   console.log(id)
   if (id == "665" || id == 665) {
-    res.json({ name: "FancyEggz #" + id, image: "https://ipfs.io/ipfs/QmRv1Vveqx4LVdFk1R3wyTtpdau4gkb7BvWRG7825B83qz/-" + id + ".gif", id: id, description: "Fancy Eggz #"+id })
+    res.json({ name: "FEggz #" + id, image: "https://ipfs.io/ipfs/QmRv1Vveqx4LVdFk1R3wyTtpdau4gkb7BvWRG7825B83qz/-666.gif", id: id, description: "Fancy Eggz #666" })
   } else {
-    res.json({ name: "FancyEggz #" + id, image: "https://ipfs.io/ipfs/QmRv1Vveqx4LVdFk1R3wyTtpdau4gkb7BvWRG7825B83qz/-" + id + ".jpg", id: id, description: "Fancy Eggz #"+id })
+    res.json({ name: "FEggz #" + id, image: "https://ipfs.io/ipfs/QmRv1Vveqx4LVdFk1R3wyTtpdau4gkb7BvWRG7825B83qz/-" + (parseInt(id)+1).toString() + ".jpg", id: id, description: "Fancy Eggz #"+id })
   }
 })
 
