@@ -121,9 +121,9 @@ app.get('/feggz_api', (req, res) => {
   const id = req.query.id;
   console.log(id)
   if (id == "665" || id == 665) {
-    res.json({ name: "Feggz #" + id, image: "https://ipfs.io/ipfs/QmRv1Vveqx4LVdFk1R3wyTtpdau4gkb7BvWRG7825B83qz/-666.gif", id: (parseInt(id)+1).toString(), description: "Fancy Eggz #666" })
+    res.json({ name: "Feggz #" + id, image: "https://ipfs.io/ipfs/QmRv1Vveqx4LVdFk1R3wyTtpdau4gkb7BvWRG7825B83qz/-666.gif/", id: (parseInt(id)+1).toString(), description: "Fancy Eggz #666" })
   } else {
-    res.json({ name: "Feggz #" + (parseInt(id)+1).toString() , image: "https://ipfs.io/ipfs/QmRv1Vveqx4LVdFk1R3wyTtpdau4gkb7BvWRG7825B83qz/-" + (parseInt(id)+1).toString() + ".jpg", id: (parseInt(id)+1).toString(), description: "Fancy Eggz #" + (parseInt(id)+1).toString()})
+    res.json({ name: "Feggz #" + (parseInt(id)+1).toString() , image: "https://ipfs.io/ipfs/QmRv1Vveqx4LVdFk1R3wyTtpdau4gkb7BvWRG7825B83qz/-" + (parseInt(id)+1).toString() + ".jpg/", id: (parseInt(id)+1).toString(), description: "Fancy Eggz #" + (parseInt(id)+1).toString()})
   }
 })
 
