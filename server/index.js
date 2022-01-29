@@ -877,7 +877,7 @@ app.get("/", (req, res) => {
 
 app.get("/ownerOfName", async (req, res) => {
   const name = req.query.id;
-  await contract.getOwnerOfName(name).then( (result) => { 
+  /*await*/ contract.getOwnerOfName(name).then( (result) => { 
     res.json({ message: result, on: true });
   });
   //next();
