@@ -880,15 +880,15 @@ app.get("/ownerOfName", async (req, res) => {
   await contract.getOwnerOfName(name).then( (result) => { 
     res.json({ message: result, on: true });
   });
-  next();
+  //next();
 });
 
 app.get("/nameOfOwner", async (req, res) => {
   const owner = req.query.id;
-  await contract.getNameOfOwner(owner).then( (result) => { 
+  await contract.getNameOfOwner(owner).then((result) => { 
     res.json({ message: result, on: true });
   });
-  next();
+  //next();
 });
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
