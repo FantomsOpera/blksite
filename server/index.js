@@ -875,17 +875,17 @@ app.get("/", (req, res) => {
   res.json({ message: "API is running", on: true });
 });
 
-app.get("/ownerOfName", async (req, res) => {
+app.get("/ownerOfName", (req, res) => {
   const name = req.query.id;
-  /*await*/ contract.getOwnerOfName(name).then( (result) => { 
+  contract.getOwnerOfName(name).then( (result) => { 
     res.json({ message: result, on: true });
   });
   //next();
 });
 
-app.get("/nameOfOwner", async (req, res) => {
+app.get("/nameOfOwner", (req, res) => {
   const owner = req.query.id;
-  await contract.getNameOfOwner(owner).then((result) => { 
+  contract.getNameOfOwner(owner).then((result) => { 
     res.json({ message: result, on: true });
   });
   //next();
